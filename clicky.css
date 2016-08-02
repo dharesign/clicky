@@ -1,0 +1,137 @@
+/**
+ * Clicky — a simple button system
+ * https://github.com/dharesign/clicky
+ */
+
+.clicky-button {
+    align-items: center;
+    background-color: #dadada;
+    border-radius: 0.25em;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    height: 1em;
+    justify-content: space-between;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.clicky-button:active,
+.clicky-button:focus,
+.clicky-button:hover {
+    background-color: #eaeaea;
+}
+
+.clicky-button.clicky-error {
+    background-color: #fc5158;
+    color: #f5f5f5;
+}
+.clicky-button.clicky-error:active,
+.clicky-button.clicky-error:focus,
+.clicky-button.clicky-error:hover {
+    background-color: #ff685e;
+}
+
+.clicky-button.clicky-warn {
+    background-color: #f57e4d;
+    color: #f5f5f5;
+}
+.clicky-button.clicky-warn:active,
+.clicky-button.clicky-warn:focus,
+.clicky-button.clicky-warn:hover {
+    background-color: #f89563;
+}
+
+.clicky-button.clicky-info {
+    background-color: #ffc700;
+    color: #f5f5f5;
+}
+.clicky-button.clicky-info:active,
+.clicky-button.clicky-info:focus,
+.clicky-button.clicky-info:hover {
+    background-color: #ffdd33;
+}
+
+.clicky-button.clicky-success {
+    background-color: #5bb660;
+    color: #f5f5f5;
+}
+
+.clicky-button.clicky-success:active,
+.clicky-button.clicky-success:focus,
+.clicky-button.clicky-success:hover {
+    background-color: #7ccc79;
+}
+
+.clicky-icon  + .clicky-label {
+    padding-left: 0.5em;
+}
+.clicky-icon  + .clicky-icon {
+    padding-left: 0.5em;
+}
+.clicky-label + .clicky-icon {
+    padding-left: 0.5em;
+}
+.clicky-label + .clicky-label {
+    padding-left: 0.5em;
+}
+
+@media screen and (max-width: 48rem) {
+    .clicky-button .clicky-xs-hidden {
+        display: none;
+    }
+
+    .clicky-icon.clicky-xs-hidden  + .clicky-label {
+        padding-left: 0;
+    }
+    .clicky-label.clicky-xs-hidden + .clicky-icon {
+        padding-left: 0;
+    }
+}
+@media screen and (min-width: 48rem) and (max-width: 62rem) {
+    .clicky-button .clicky-sm-hidden {
+        display: none;
+    }
+
+    .clicky-icon.clicky-sm-hidden  + .clicky-label {
+        padding-left: 0;
+    }
+    .clicky-label.clicky-sm-hidden + .clicky-icon {
+        padding-left: 0;
+    }
+}
+@media screen and (min-width: 62rem) and (max-width: 76rem) {
+    .clicky-button .clicky-md-hidden {
+        display: none;
+    }
+
+    .clicky-icon.clicky-md-hidden  + .clicky-label {
+        padding-left: 0;
+    }
+    .clicky-label.clicky-md-hidden + .clicky-icon {
+        padding-left: 0;
+    }
+}
+@media screen and (min-width: 76rem) {
+    .clicky-button .clicky-lg-hidden {
+        display: none;
+    }
+
+    .clicky-icon.clicky-lg-hidden  + .clicky-label {
+        padding-left: 0;
+    }
+    .clicky-label.clicky-lg-hidden + .clicky-icon {
+        padding-left: 0;
+    }
+
+    .clicky-lg {
+        flex-direction: column;
+        height: 2em;
+    }
+    .clicky-lg .clicky-label,
+    .clicky-lg .clicky-icon {
+        padding-left: 0;
+    }
+}
