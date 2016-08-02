@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clicky &mdash; a flexbox-based button system</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Noto+Sans:400,400i,700,700i|Source+Code+Pro:300">
+    <link rel="stylesheet" href="css/clicky/clicky.css">
+    <link rel="stylesheet" href="css/flexy/flexy.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="flexy-grid flexy-gutters">
+            <div class="flexy-row flexy-row-xs-baseline flexy-row-xs-center">
+                <div class="brand flexy-col-xs-6 flexy-col-sm-packed flexy-col-xs-center">Clicky</div>
+                <div class="tagline flexy-col-xs-6 flexy-col-sm flexy-col-xs-center flexy-col-sm-left">a flexbox-based button system</div>
+                <div class="flexy-col-xs-6 flexy-col-sm-packed flexy-col-xs-center">
+                    <a href="https://github.com/dharesign/clicky" class="clicky-button">
+                        <i class="clicky-icon fa fa-github"></i>
+                        <span class="clicky-label">GitHub Project</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="flexy-grid">
+                <div class="flexy-row">
+                    <div class="flexy-col-sm-6">
+                        <h1>What is clicky?</h1>
+                        <p>
+                            Clicky is a simple set of button styles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="flexy-grid">
+                <div class="flexy-row">
+                    <div class="flexy-col-xs-6">
+                        <h1>How do I use it?</h1>
+                        <p>
+                            Clicky is available
+                            <a href="https://github.com/dharesign/clicky">on
+                            GitHub</a>. The <code>master</code> branch contains
+                            a single <code>clicky.css</code> file which you
+                            should download and include in your project as
+                            usual.
+                        </p>
+                        <p>
+                            Below is a collection of examples of all of the
+                            different classes available.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flexy-grid">
+                <div class="flexy-row">
+                    <div class="flexy-col-xs-6">
+                        <h2>Text, Labels, or Both</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flexy-grid">
+                <div class="flexy-row">
+                    <div class="flexy-col-xs-6">
+                        <a href="#" class="clicky-button">
+                            <span class="clicky-label">Label</span>
+                        </a>
+                        <a href="#" class="clicky-button">
+                            <i class="clicky-icon fa fa-pencil"></i>
+                        </a>
+                        <a href="#" class="clicky-button">
+                            <i class="clicky-icon fa fa-pencil"></i>
+                            <span class="clicky-label">Icon Before</span>
+                        </a>
+                        <a href="#" class="clicky-button">
+                            <span class="clicky-label">Icon After</span>
+                            <i class="clicky-icon fa fa-pencil"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flexy-grid">
+                <div class="flexy-row">
+                    <div class="flexy-col-xs-6">
+                        <h2>Responsive</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flexy-grid">
+                <div class="flexy-row">
+                    <div class="flexy-col-xs-6">
+                        <a href="#" class="clicky-button">
+                            <i class="clicky-icon fa fa-pencil"></i>
+                            <span class="clicky-label clicky-xs-hidden">Label</span>
+                        </a>
+                        <a href="#" class="clicky-button">
+                            <i class="clicky-icon fa fa-pencil"></i>
+                            <span class="clicky-label clicky-sm-hidden">Label</span>
+                        </a>
+                        <a href="#" class="clicky-button">
+                            <i class="clicky-icon fa fa-pencil"></i>
+                            <span class="clicky-label clicky-md-hidden">Label</span>
+                        </a>
+                        <a href="#" class="clicky-button">
+                            <i class="clicky-icon fa fa-pencil"></i>
+                            <span class="clicky-label clicky-lg-hidden">Label</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flexy-row">
+                    <div class="flexy-col-xs-6">
+                        <a href="#" class="clicky-button">
+                            <i class="clicky-icon fa fa-pencil"></i>
+                            <span class="clicky-label clicky-xs-hidden">Label</span>
+                        </a>
+                        <a href="#" class="clicky-button">
+                            <i class="clicky-icon fa fa-pencil"></i>
+                            <span class="clicky-label clicky-xs-hidden clicky-sm-hidden clicky-md-hidden clicky-lg-hidden">Label</span>
+                            <span class="clicky-label clicky-xs-hidden">Some Long Label</span>
+                        </a>
+                        <a href="#" class="clicky-button">
+                            <i class="clicky-icon fa fa-pencil"></i>
+                            <span class="clicky-label clicky-xs-hidden clicky-md-hidden clicky-lg-hidden">Label</span>
+                            <span class="clicky-label clicky-xs-hidden clicky-sm-hidden">Some Long Label</span>
+                        </a>
+                        <a href="#" class="clicky-button">
+                            <i class="clicky-icon fa fa-pencil"></i>
+                            <span class="clicky-label clicky-xs-hidden clicky-lg-hidden">Label</span>
+                            <span class="clicky-label clicky-xs-hidden clicky-sm-hidden clicky-md-hidden">Some Long Label</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flexy-row">
+                    <div class="flexy-col-xs-6">
+                        <a href="#" class="clicky-button clicky-lg">
+                            <i class="clicky-icon fa fa-pencil"></i>
+                            <span class="clicky-label">Label</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flexy-grid">
+                <div class="flexy-row">
+                    <div class="flexy-col-xs-6">
+                        <h2>Colors</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flexy-grid">
+                <div class="flexy-row">
+                    <div class="flexy-col-xs-6">
+                        <a href="#" class="clicky-button">
+                            <span class="clicky-label">Default</span>
+                        </a>
+                        <a href="#" class="clicky-button clicky-error">
+                            <span class="clicky-label">Error</span>
+                        </a>
+                        <a href="#" class="clicky-button clicky-warn">
+                            <span class="clicky-label">Warn</span>
+                        </a>
+                        <a href="#" class="clicky-button clicky-info">
+                            <span class="clicky-label">Info</span>
+                        </a>
+                        <a href="#" class="clicky-button clicky-success">
+                            <span class="clicky-label">Success</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

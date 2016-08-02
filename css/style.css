@@ -1,0 +1,26 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+pre, code, .cell {
+    font-weight: 300;
+    font-family: "Source Code Pro", monospace;
+}
+
+header {
+    background-color: #eee;
+    border-top: 5px solid #5bb660;
+}
+
+header .brand {
+    color: #5bb660;
+    font-family: "Alice", serif;
+    font-size: 3em;
+    text-shadow: 0.025em 0.025em 0 #eee,
+                 0.05em  0.05em  0 #b5b5b5;
+}
+
+header .tagline {
+    font-size: 1.5em;
+    font-style: italic;
+}
